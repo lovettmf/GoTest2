@@ -26,7 +26,6 @@ func main() {
 	sort.Slice(sli, func(i, j int) bool { return sli[i] < sli[j] }) //sorts the slice in ascending order
 	then := time.Now()                                              //records end time
 	p(now.Sub(then))                                                //prints time summation took
-	p(sli)
 
 	//Stable sort
 	//Equal elements will not change order
@@ -34,5 +33,5 @@ func main() {
 	sort.SliceStable(sli, func(i, j int) bool { return sli[i] > sli[j] }) //sorts the slice in descending order (so it changes)
 	then = time.Now()                                                     //records end time
 	p(now.Sub(then))                                                      //prints time summation took
-	
+
 }
